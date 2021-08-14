@@ -41,6 +41,9 @@ var quesBank = [
 }
 ]
 
+var userName = readlineSync.question('Enter your username ');
+console.log('Hi ' + userName + '!');
+
 for(var i=0;i<quesBank.length;i++){
   play(quesBank[i].question,quesBank[i].options,quesBank[i].answer)
 }
